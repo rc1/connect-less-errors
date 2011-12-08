@@ -3,7 +3,7 @@ var path = require('path');
 
 module.exports = function (err, req, res, next) {
     if (path.extname(req.url) === '.css') {
-
+        
         var details =   "/* Less CSS: " +  err.name + "\n" +
                         " * \n"+
                         " * in     : " + path.basename(req.url, "css") + ".less \n" +
@@ -18,9 +18,6 @@ module.exports = function (err, req, res, next) {
         details +=      "\n" +
                         " * Output : " +  JSON.stringify(err) + "\n" + 
                         "*/";
-
-        
-        console.log(details);
 
         res.writeHead(200, {'Content-Type': 'text/css'});
         res.end(details);

@@ -15,8 +15,8 @@ var lessErrorHandler = require ('./libs/less-error/less-error.js');
 
     app.use(express.compiler({src: __dirname + '/public', enable:['less']}));
     app.use(lessErrorHandler);
-    app.use(express.errorHandler()); 
     app.use(express.static(__dirname + '/public'));
+    app.use(express.errorHandler()); 
 
 ```
 

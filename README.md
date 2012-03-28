@@ -9,7 +9,7 @@ Error when compiling a `.less` file? Instead connect of sending just an empty `.
 
 ```JavaScript
 
-var lessErrorHandler = require ('./libs/less-error/less-error.js');
+var lessErrorHandler = require ('./connect-less-error/connect-less-error.js');
 
 ....
 

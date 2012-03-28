@@ -1,8 +1,8 @@
-# LESS-Errors
+# Connect-LESS-Errors
 
 [LESS CSS](https://github.com/cloudhead/less.js) error reporting middleware for [Connect.js](https://github.com/senchalabs/connect)'s [compiler middleware](http://senchalabs.github.com/connect/middleware-compiler.html).
 
-Error when compiling a `.less` file? Instead of sending an empty `.css` file this middleware will send an empty `.css` file with a parse error contained within a comment block. 
+Error when compiling a `.less` file? Instead connect of sending just an empty `.css` file, connect will send a `.css` file containing the error.
 
 
 # Example Usage (with Express)
@@ -19,11 +19,3 @@ var lessErrorHandler = require ('./libs/less-error/less-error.js');
     app.use(express.errorHandler()); 
 
 ```
-
-
-# Roadmap
-
-* beautify the output
-* tests
-* make css error appear in document
-* make module report other errors

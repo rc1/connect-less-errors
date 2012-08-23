@@ -1,3 +1,4 @@
+[![build status](https://secure.travis-ci.org/rc1/connect-less-errors.png)](http://travis-ci.org/rc1/connect-less-errors)
 # Connect-LESS-Errors
 
 [LESS CSS](https://github.com/cloudhead/less.js) error reporting middleware for [Connect.js](https://github.com/senchalabs/connect)'s [compiler middleware](http://senchalabs.github.com/connect/middleware-compiler.html).
